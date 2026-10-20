@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prompt and Reply</title>
+  <style>
+    :root{--bg:#f7f8fc;--ink:#172033;--muted:#6b7280;--line:#dce2ed;--prompt:#eef6ff;--reply:#fff;--blue:#1463d8}
+    *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans Bengali","Hind Siliguri",system-ui,sans-serif}
+    main{width:min(100%,1100px);margin:auto;padding:clamp(10px,3vw,36px)}
+    section{overflow:hidden;margin:0 0 18px;background:var(--reply);border:1px solid var(--line);border-radius:16px;box-shadow:0 3px 14px #1720330a}
+    section.prompt{background:var(--prompt);border-color:#cbdcf8}.head{display:flex;gap:12px;align-items:center;justify-content:space-between;padding:12px 16px;border-bottom:1px solid var(--line)}
+    h1{margin:0;font-size:1rem;font-weight:800}.copy{border:0;border-radius:9px;background:var(--blue);color:#fff;padding:8px 12px;font:700 .86rem/1 system-ui,sans-serif;white-space:nowrap;cursor:pointer}.copy:focus-visible{outline:3px solid #f5aa00;outline-offset:2px}
+    .text{margin:0;padding:16px;overflow-wrap:anywhere;font:400 clamp(.95rem,1.6vw,1.04rem)/1.75 "Noto Sans Bengali","Hind Siliguri",system-ui,sans-serif}.text p{margin:0 0 14px;white-space:pre-wrap}.text p:last-child{margin-bottom:0}.text h2{margin:4px 0 14px;font-size:clamp(1.12rem,2.5vw,1.4rem);line-height:1.35}.text ul,.text ol{margin:0;padding-left:1.5rem}.text li{margin:.42rem 0}.text strong{font-weight:800}
+    .table-wrap{overflow-x:auto;margin:0 16px 16px;border:1px solid var(--line);border-radius:10px;-webkit-overflow-scrolling:touch}table{width:100%;min-width:680px;border-collapse:collapse;background:#fff;font:400 .94rem/1.65 "Noto Sans Bengali","Hind Siliguri",system-ui,sans-serif}th,td{padding:12px;text-align:left;vertical-align:top;border-right:1px solid var(--line);border-bottom:1px solid var(--line);overflow-wrap:anywhere}th{background:#edf2fa;font-weight:800}th:last-child,td:last-child{border-right:0}tr:last-child td{border-bottom:0}
+    @media(max-width:480px){main{padding:8px}section{margin-bottom:10px;border-radius:12px}.head,.text{padding:12px}.text{font-size:.93rem;line-height:1.64}.table-wrap{margin:0 12px 12px}}
+  </style>
+</head>
+<body>
+  <main id="page"></main>
+  <script id="source" type="text/plain">Prompt:
+
+বইটার আসল বক্তব্য বা core message:
+
+**ম্যানিফেস্টেশন** প্রক্রিয়ায় মানুষের নিজস্ব সাধ্যাধীন কর্ম বা **ফ্রি উইল** এবং ইউনিভার্সের পরিচালন শক্তির ভূমিকা অত্যন্ত তাৎপর্যপূর্ণ। মানুষ যখন নিজের সাধ্যাতীত কোনো লক্ষ্য অর্জনে সচেষ্ট হয়, তখন তাকে ইউনিভার্সের নিরপেক্ষ সামঞ্জস্য বজায় রাখার নিয়মের ওপর নির্ভর করতে হয়। এক্ষেত্রে **অ্যাফারমেশনের** মূল উদ্দেশ্য হলো মনের অপারেটিং সিস্টেমকে রিসেট করে ইউনিভার্সের শক্তির প্রতি গভীর বিশ্বাস ও **কনভিকশন** তৈরি করা। এই সঠিক বিশ্বাস মানুষকে অতিরিক্ত অস্থিরতা ও ভুল পদক্ষেপ থেকে রক্ষা করে। একই সঙ্গে নিজের সাধ্যাধীন কাজগুলো নৈপুণ্যের সঙ্গে সম্পাদন করলে ইউনিভার্স থেকে অনুকূল পরিস্থিতি বা **সিচুয়েশনাল ফেভার** তৈরি হয়। পরিশেষে, নিজের কর্মের সঠিক সম্পাদন এবং ইউনিভার্সের শক্তির ওপর অটুট আস্থার মাধ্যমেই কাঙ্ক্ষিত ইচ্ছা সফলভাবে বাস্তবায়িত হয়।
+
+এই বর্ণনাটা থেকে বইয়ের মূল বক্তব্যটা স্পষ্টভাবে বোঝা যাচ্ছে।
+
+এখানে মূল বিষয় শুধু ইউনিভার্সের ওপর বিশ্বাস রাখা নয়। বরং ম্যানিফেস্টেশন কীভাবে কাজ করে, সেখানে মানুষের নিজের কর্ম ও ইউনিভার্সের পরিচালন শক্তির পৃথক ভূমিকা কী, অ্যাফারমেশন কীভাবে বিশ্বাস ও কনভিকশন তৈরি করে এবং এই প্রক্রিয়ায় সিচুয়েশনাল ফেভারের ভূমিকা কী—সেই কার্যকারণ বোঝানো।
+
+অর্থাৎ, বইটি পাঠককে শুধু কী করতে হবে তা জানাবে না; কাঙ্ক্ষিত ফল বাস্তবায়নের প্রক্রিয়ায় কী ঘটে এবং সঠিক ফলের জন্য কোন বিষয়গুলোর ভূমিকা রয়েছে, তা বুঝতে সাহায্য করবে।
+
+আপাতত এই বক্তব্যটিকে প্রস্তাবিত বইয়ের core message-এর রেফারেন্স হিসেবেই নিচ্ছি। 
+
+এবার এর ভিত্তিতে এখন নতুন কাঠামো, অধ্যায়বিন্যাস বা অতিরিক্ত ব্যাখ্যা গুলো identify করো।
+
+Reply:
+
+NotebookLM-এর এই Core Message-টিকে ভিত্তি করে বইটির কাঠামো, অধ্যায়বিন্যাস এবং অতিরিক্ত ব্যাখ্যার প্রয়োজনীয়তা চিহ্নিত করতে গেলে প্রথমে একটি বিষয় পরিষ্কার রাখা দরকার।
+
+বইয়ের উদ্দেশ্য শুধু Manifestation-এর কিছু পদ্ধতি শেখানো নয়; পাঠককে Manifestation-এর কার্যকারণ বুঝতে সাহায্য করা, যাতে তাঁর বিশ্বাস, Conviction এবং কাজ করার পদ্ধতিতে পরিবর্তন আসে।
+
+সেই লক্ষ্য ধরে রিডারের জার্নিটিকে তিনটি স্তরে দেখা যায়।
+
+## ১. রিডারের জার্নির মৌলিক কাঠামো
+
+স্তর ১ — বোঝাপড়ার পরিবর্তন
+
+Universe কীভাবে কাজ করে, তার পরিচালন শক্তির ভূমিকা কী এবং মানুষের নিজের ইচ্ছার সীমা কোথায়—সেটা বোঝা।
+
+স্তর ২ — বিশ্বাস ও Conviction-এর পরিবর্তন
+
+Affirmation-এর উদ্দেশ্য, Universe’s Will-এর ওপর আস্থা এবং সেই আস্থা কীভাবে অস্থিরতা ও ভুল পদক্ষেপ কমাতে সাহায্য করে, তা বোঝা।
+
+স্তর ৩ — কাজ করার পদ্ধতির পরিবর্তন
+
+নিজের সাধ্যাধীন কাজ যথাযথভাবে করা, উপযুক্ত পরিস্থিতিতে সুযোগ কাজে লাগানো এবং নিজের সাধ্যাতীত বিষয়কে জোর করে নিয়ন্ত্রণ করার চেষ্টা না করা।
+
+এই তিনটি স্তরই বইয়ের কাঠামো তৈরির মূল ভিত্তি হতে পারে। এবার দেখা যাক, এগুলোকে অধ্যায় ও ব্যাখ্যার স্তরে কীভাবে ভাগ করা যায়।
+
+## ২. প্রস্তাবিত অধ্যায়বিন্যাস
+
+এটি চূড়ান্ত অধ্যায়তালিকা নয়। Core Message-এর কার্যকারণ অনুযায়ী কোন বিষয়গুলোকে আলাদা অধ্যায়ে নেওয়া প্রয়োজন, তার একটি প্রাথমিক বিন্যাস।
+
+অংশ ১
+
+Universe-কে বোঝা
+
+1. Universe কি মানুষের ইচ্ছার অধীন?
+2. Universe-এর নিরপেক্ষতা ও সামঞ্জস্য বজায় রাখার পরিচালন ব্যবস্থা।
+3. নিজের ইচ্ছা ও Universe-এর পরিচালন শক্তির মধ্যে সম্পর্ক কী?
+
+উদ্দেশ্য: পাঠকের Universe-সম্পর্কিত প্রাথমিক ধারণাকে পরীক্ষা করা এবং তার ভূমিকা বোঝার ভিত্তি তৈরি করা।
+
+অংশ ২
+
+Free Will ও Universe’s Will-এর পৃথক ভূমিকা
+
+4. মানুষের সাধ্য ও সাধ্যাতীত কাজের পার্থক্য।
+5. নিজের Free Will কোথায় প্রয়োগ করতে হবে?
+6. Universe’s Will-এর ওপর নির্ভরতা, Surrender ও Gratitude-এর অর্থ কী?
+
+উদ্দেশ্য: পাঠক যেন নিজের দায়িত্ব ও নিজের নিয়ন্ত্রণের বাইরের ক্ষেত্রকে আলাদা করতে পারেন।
+
+অংশ ৩
+
+Affirmation-এর প্রকৃত ভূমিকা
+
+7. Affirmation কেন শুধু ইচ্ছা প্রকাশ করা নয়?
+8. মনের Operating System Reset করার অর্থ কী?
+9. Universe’s Will-এর ওপর বিশ্বাস ও Conviction কীভাবে তৈরি হয়?
+
+উদ্দেশ্য: Affirmation-কে একটি অর্থপূর্ণ মানসিক প্রক্রিয়া হিসেবে বোঝানো, নিছক বাক্য পুনরাবৃত্তি হিসেবে নয়।
+
+অংশ ৪
+
+বিশ্বাস, অস্থিরতা ও ভুল পদক্ষেপ
+
+10. বিশ্বাস থাকলে নিজের কাজের ওপর মনোযোগ দেওয়া সহজ হয় কেন?
+11. বিশ্বাস হারালে সাধ্যাতীত কাজ নিজের হাতে নিয়ন্ত্রণ করার প্রবণতা কেন তৈরি হয়?
+12. নিজের সাধ্যাধীন কাজ ও Universe’s Will-এর ভূমিকার মধ্যে ভারসাম্য কীভাবে বজায় থাকবে?
+
+উদ্দেশ্য: বিশ্বাসের ব্যবহারিক গুরুত্ব এবং ভুল পদক্ষেপের সঙ্গে তার সম্পর্ক বোঝানো।
+
+অংশ ৫
+
+Situational Favour থেকে Wish Fulfillment
+
+13. Universe কীভাবে অনুকূল পরিস্থিতি ও সুযোগের মাধ্যমে সহায়তা করে?
+14. সেই সুযোগে Free Will প্রয়োগের ভূমিকা কী?
+15. Action, Karma-Phala ও Wish Fulfillment-এর মধ্যে সম্পর্ক কী?
+
+উদ্দেশ্য: পুরো প্রক্রিয়াটির কার্যকারণকে একসঙ্গে বোঝানো।
+
+এই বিন্যাসে পাঁচটি অংশ রাখা হয়েছে বিষয়গুলোর পারস্পরিক সম্পর্ক দেখানোর জন্য; ১৫টি অধ্যায় চূড়ান্তভাবে নির্ধারিত হয়েছে, এমন দাবি করছি না। কোনও দুটি অধ্যায় একত্র করা যায় কি না, অথবা আরও কোনও মৌলিক বিষয় আলাদা অধ্যায় দাবি করে কি না, তা পরবর্তী যাচাইয়ের বিষয়।
+
+## ৩. কোন অতিরিক্ত ব্যাখ্যাগুলো প্রয়োজন?
+
+NotebookLM-এর Core Message-এ মূল ধারণাগুলো আছে। কিন্তু পাঠক যাতে শুধু কথাগুলো বুঝেই থেমে না যান, বরং কার্যকারণ ধরতে পারেন, তার জন্য কয়েকটি সংযোগকারী ব্যাখ্যা প্রয়োজন হতে পারে।
+
+| মূল বিষয়                       | যে ব্যাখ্যাটি পরিষ্কার করা প্রয়োজন                                                               |
+| ------------------------------ | ------------------------------------------------------------------------------------------------ |
+| Universe-এর নিরপেক্ষতা         | নিরপেক্ষতা বলতে কী বোঝানো হচ্ছে এবং কেন Universe-কে ইচ্ছামতো ফলদাতা হিসেবে দেখা হচ্ছে না।        |
+| Free Will বনাম Universe’s Will | নিজের সাধ্যাধীন কাজ এবং সাধ্যাতীত কাজের সীমারেখা কীভাবে বোঝা যাবে।                               |
+| Affirmation                    | শুধু ইচ্ছা প্রকাশ করা ও মনের Operating System Reset করার মধ্যে পার্থক্য কী।                      |
+| Belief ও Conviction            | বিশ্বাস কীভাবে নিজের কাজের ধরনকে প্রভাবিত করে এবং প্রত্যক্ষ ফলের অভিজ্ঞতার সঙ্গে তার সম্পর্ক কী। |
+| Situational Favour             | অনুকূল পরিস্থিতি, সুযোগ এবং মানুষের নিজের কর্ম—এই তিনটির সম্পর্ক কী।                             |
+| Wish Fulfillment               | শুধু বিশ্বাস রাখলেই কেন পুরো প্রক্রিয়া সম্পন্ন হয় না; নিজের সাধ্যাধীন কর্মের ভূমিকা কোথায়।       |
+
+## ৪. একটি গুরুত্বপূর্ণ বিষয়: আরও কোন ধারণাগুলো যুক্ত করে ব্যাখ্যা করতে হবে?
+
+আপনার আগের বক্তব্যে আরও কয়েকটি ধারণা ছিল, যেগুলো NotebookLM-এর সংক্ষিপ্ত Core Message-এ স্পষ্টভাবে উঠে আসেনি:
+
+- Wish-এর সঙ্গে Universe-এর সামঞ্জস্য: কোনও ইচ্ছা পূরণের চেষ্টা Universe-এর সামগ্রিক সামঞ্জস্যের পরিপন্থী হলে তার পরিণতি কী।
+- Past, Future ও Present: অতীতের অভিজ্ঞতা দিয়ে ভবিষ্যৎকে নিয়ন্ত্রণ করার চেষ্টা বর্তমানের কাজকে কীভাবে প্রভাবিত করে।
+- Comfort Zone ও পুরনো অভ্যাস: নতুন ফল চাইতে গিয়েও পুরনো চিন্তা ও কাজের পদ্ধতি ধরে রাখার স্ববিরোধিতা।
+- বিশ্বাসের বাস্তব পরীক্ষা: নিজের Free Will প্রয়োগ করে ফলের অভিজ্ঞতা অর্জনের মাধ্যমে Conviction গড়ে ওঠা।
+
+এগুলোকে শুধু অতিরিক্ত ব্যাখ্যা হিসেবে রাখা হবে, নাকি আলাদা অধ্যায় করতে হবে, তা এখনই স্থির করা ঠিক হবে না। প্রতিটি বিষয় রিডারের মূল উপলব্ধি ও পরিবর্তনের জন্য কতটা অপরিহার্য, সেটি যাচাই করতে হবে।
+
+আমার বর্তমান মূল্যায়ন: বইটির কাঠামোর কেন্দ্র হওয়া উচিত Universe-এর পরিচালন ব্যবস্থা বোঝা থেকে শুরু করে Free Will, Affirmation, Belief এবং Situational Favour-এর মধ্য দিয়ে Wish Fulfillment-এর কার্যকারণ বোঝা পর্যন্ত রিডারের যাত্রা। অন্য ধারণাগুলো এই যাত্রাকে পরিষ্কার করতে সাহায্য করবে কি না, সেটাই তাদের অন্তর্ভুক্তির মাপকাঠি হওয়া উচিত।</script>
+  <script>
+    const source=document.querySelector('#source').textContent;
+    const [prompt,reply]=source.split(/\nReply:\n\n/);
+    const page=document.querySelector('#page');
+    const formatInline=(value)=>{const fragment=document.createDocumentFragment();let rest=value;while(rest){const match=rest.match(/\*\*(.+?)\*\*/);if(!match){fragment.append(rest);break}if(match.index)fragment.append(rest.slice(0,match.index));const strong=document.createElement('strong');strong.textContent=match[1];fragment.append(strong);rest=rest.slice(match.index+match[0].length)}return fragment};
+    const appendText=(section,lines)=>{if(!lines.length)return;const box=document.createElement('div');box.className='text';for(let i=0;i<lines.length;){if(!lines[i]){i++;continue}const heading=lines[i].match(/^##\s+(.+)$/);if(heading){const h=document.createElement('h2');h.append(formatInline(heading[1]));box.append(h);i++;continue}const listMatch=lines[i].match(/^(- |\d+\. )/);if(listMatch){const ordered=/^\d+\. /.test(lines[i]);const list=document.createElement(ordered?'ol':'ul');while(i<lines.length&&(ordered?/^\d+\. /.test(lines[i]):/^- /.test(lines[i]))){const li=document.createElement('li');li.append(formatInline(lines[i].replace(ordered?/^\d+\. /:/^- /,'')));list.append(li);i++}box.append(list);continue}const paragraph=[];while(i<lines.length&&lines[i]&&!/^##\s+/.test(lines[i])&&!/^(- |\d+\. )/.test(lines[i]))paragraph.push(lines[i++]);const p=document.createElement('p');p.append(formatInline(paragraph.join('\n')));box.append(p)}section.append(box)};
+    const make=(title,text,isPrompt=false)=>{const section=document.createElement('section');section.className=isPrompt?'prompt':'';section.innerHTML=`<div class="head"><h1>${title}</h1>${isPrompt?'<button class="copy" type="button">Copy Prompt</button>':''}</div>`;const lines=text.replace(/^Prompt:\n\n/,'').split('\n');let plain=[];const flush=()=>{if(!plain.length)return;appendText(section,plain);plain=[]};for(let i=0;i<lines.length;){if(!/^\|/.test(lines[i])){plain.push(lines[i++]);continue}const rows=[];while(i<lines.length&&/^\|/.test(lines[i]))rows.push(lines[i++].split('|').slice(1,-1).map(x=>x.trim()));if(rows[1]&&rows[1].every(x=>/^[-: ]+$/.test(x))){flush();const wrap=document.createElement('div');wrap.className='table-wrap';const table=document.createElement('table'),thead=document.createElement('thead'),tr=document.createElement('tr');rows[0].forEach(x=>{const th=document.createElement('th');th.textContent=x;tr.append(th)});thead.append(tr);table.append(thead);const tbody=document.createElement('tbody');rows.slice(2).forEach(row=>{const r=document.createElement('tr');row.forEach(x=>{const td=document.createElement('td');td.textContent=x;r.append(td)});tbody.append(r)});table.append(tbody);wrap.append(table);section.append(wrap)}else plain.push(...rows.map(row=>'| '+row.join(' | ')+' |'))}flush();if(isPrompt)section.querySelector('.copy').onclick=async e=>{await navigator.clipboard.writeText(text.replace(/^Prompt:\n\n/,''));e.currentTarget.textContent='Copied';setTimeout(()=>e.currentTarget.textContent='Copy Prompt',1500)};page.append(section)};
+    make('Prompt',prompt,true);make('Reply',reply);
+  </script>
+</body>
+</html>
